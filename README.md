@@ -1,1 +1,1 @@
-### Ruby on Rails Sample Application
+### Bootstrap Template
