@@ -1,34 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= full_title(yield(:title)) %></title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Bootstrap Template</title>
     <%= stylesheet_link_tag "application", media: "all",
                                            "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
     <%= csrf_meta_tags %>
-    <%= render 'layouts/shim' %>
 
-    <!-- JSforce -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jsforce/1.4.1/jsforce.min.js"></script>
-    <script>
-      jsforce.browser.init({
-        clientId: '3MVG9ZL0ppGP5UrBNnfv8GHjLw9ac.CX_Zko26PdUO6DZ_2Nd5YNn8Xg57RSDAXyYr3XBylQAesapT_1JtWdR',
-        redirectUri: 'https://tyoshikawa1106-rails-bootstrap.herokuapp.com/'
-      });
-      jsforce.browser.on('connect', function(conn) {
-        conn.query('SELECT Id, Name FROM Account', function(err, res) {
-          if (err) { return console.error(err); }
-          console.log(res);
-        });
-      });
-    </script>
-    
+    <!-- library -->
+    <%= yield :library %>
   </head>
   <body>
-    <%= render 'layouts/header' %>
-    <div class="container">
-      <%= yield %>
-    </div>
-    <%= render 'layouts/footer' %>
+    <%= yield %>
+    <!-- javascript -->
+    <%= yield :script %>
   </body>
 </html>
