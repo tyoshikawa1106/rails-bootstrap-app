@@ -1,42 +1,22 @@
-<!-- library -->
-<% content_for :library do %>
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" />
-  <style>
-    .home {
-      margin-top: 10px;
-      font-size: 20px;
-    }
-
-    .home ul li {
-      margin: 5px 0;
-    }
-  </style>
-<% end %> 
-
-<div class="container home">
-  <ul>
-    <li><%= link_to "starter", starter_path, { :id => "starter_path", :target => "_blank"} %></li>
-    <li><%= link_to "theme", theme_path, { :id => "theme_path", :target => "_blank"} %></li>
-    <li><%= link_to "grids", grids_path, { :id => "grids_path", :target => "_blank"} %></li>
-    <li><%= link_to "jumbotron", jumbotron_path, { :id => "jumbotron_path", :target => "_blank"} %></li>
-    <li><%= link_to "narrow_jumbotron", narrow_jumbotron_path, { :id => "narrow_jumbotron_path", :target => "_blank"} %></li>
-    <li><%= link_to "navbar", navbar_path, { :id => "navbar_path", :target => "_blank"} %></li>
-    <li><%= link_to "static_top_navbar", static_top_navbar_path, { :id => "static_top_navbar_path", :target => "_blank"} %></li>
-    <li><%= link_to "fixed_navbar", fixed_navbar_path, { :id => "fixed_navbar_path", :target => "_blank"} %></li>
-    <li><%= link_to "cover", cover_path, { :id => "cover_path", :target => "_blank"} %></li>
-    <li><%= link_to "carousel", carousel_path, { :id => "carousel_path", :target => "_blank"} %></li>
-    <li><%= link_to "blog", blog_path, { :id => "blog_path", :target => "_blank"} %></li>
-    <li><%= link_to "dashboard", dashboard_path, { :id => "dashboard_path", :target => "_blank"} %></li>
-    <li><%= link_to "sign_in_page", sign_in_page_path, { :id => "sign_in_page_path", :target => "_blank"} %></li>
-    <li><%= link_to "justified_nav", justified_nav_path, { :id => "justified_nav_path", :target => "_blank"} %></li>
-    <li><%= link_to "sticky_footer", sticky_footer_path, { :id => "sticky_footer_path", :target => "_blank"} %></li>
-    <li><%= link_to "sticky_footer_with_navbar", sticky_footer_with_navbar_path, { :id => "sticky_footer_with_navbar_path", :target => "_blank"} %></li>
-  </ul>
+<div class="home-page">
+  <div class="container home">
+    <ul>
+      <li><%= link_to "starter", starter_path, { :id => "starter_path", :target => "_blank"} %></li>
+      <li><%= link_to "theme", theme_path, { :id => "theme_path", :target => "_blank"} %></li>
+      <li><%= link_to "grids", grids_path, { :id => "grids_path", :target => "_blank"} %></li>
+      <li><%= link_to "jumbotron", jumbotron_path, { :id => "jumbotron_path", :target => "_blank"} %></li>
+      <li><%= link_to "narrow_jumbotron", narrow_jumbotron_path, { :id => "narrow_jumbotron_path", :target => "_blank"} %></li>
+      <li><%= link_to "navbar", navbar_path, { :id => "navbar_path", :target => "_blank"} %></li>
+      <li><%= link_to "static_top_navbar", static_top_navbar_path, { :id => "static_top_navbar_path", :target => "_blank"} %></li>
+      <li><%= link_to "fixed_navbar", fixed_navbar_path, { :id => "fixed_navbar_path", :target => "_blank"} %></li>
+      <li><%= link_to "cover", cover_path, { :id => "cover_path", :target => "_blank"} %></li>
+      <li><%= link_to "carousel", carousel_path, { :id => "carousel_path", :target => "_blank"} %></li>
+      <li><%= link_to "blog", blog_path, { :id => "blog_path", :target => "_blank"} %></li>
+      <li><%= link_to "dashboard", dashboard_path, { :id => "dashboard_path", :target => "_blank"} %></li>
+      <li><%= link_to "sign_in_page", sign_in_page_path, { :id => "sign_in_page_path", :target => "_blank"} %></li>
+      <li><%= link_to "justified_nav", justified_nav_path, { :id => "justified_nav_path", :target => "_blank"} %></li>
+      <li><%= link_to "sticky_footer", sticky_footer_path, { :id => "sticky_footer_path", :target => "_blank"} %></li>
+      <li><%= link_to "sticky_footer_with_navbar", sticky_footer_with_navbar_path, { :id => "sticky_footer_with_navbar_path", :target => "_blank"} %></li>
+    </ul>
+  </div>
 </div>
-
-<!-- add javascript -->
-<% content_for :script do %>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
-<% end %>
